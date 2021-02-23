@@ -1,2 +1,2 @@
 # to hide secret key in settings.py
-./nomo_django/settings.py
+.env
