@@ -8,21 +8,27 @@ class User(models.Model):
     dob = models.DateField((""), auto_now=False, auto_now_add=False)
     bio = models.CharField((""), max_length=500)
 
+class Events(models.Model):
+    year = models.CharField((""), max_length=100)
+    about = models.CharField((""), max_length=300)
+    overview_text = models.CharField((""), max_length=100)
+    specific_title = models.CharField((""), max_length=100)
+    specific_link = models.CharField((""), max_length=100)
 
-# Timecapsule Model
+class Births(models.Model):
+    year = models.CharField((""), max_length=100)
+    about = models.CharField((""), max_length=300)
+    overview_text = models.CharField((""), max_length=100)
+    specific_title = models.CharField((""), max_length=100)
+    specific_link = models.CharField((""), max_length=100)
 
+class Deaths(models.Model):
+    year = models.CharField((""), max_length=100)
+    about = models.CharField((""), max_length=300)
+    overview_text = models.CharField((""), max_length=100)
+    specific_title = models.CharField((""), max_length=100)
+    specific_link = models.CharField((""), max_length=100)
 
-
-
-
-# API Model
-
-
-
-
-
-
-
-
+    
 def __str__(self):
     return self.name
